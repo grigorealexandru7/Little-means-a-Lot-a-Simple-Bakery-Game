@@ -7,9 +7,9 @@ public class CINNAMON_BUY : MonoBehaviour
     
     public void BuyCinnamon()
     {
-        if (coinCounter.totalCoins >= 1)
+        if (coinCounter.totalCoins >= 5)
         {
-            coinCounter.ChangeCoins(-1);
+            coinCounter.ChangeCoins(-5);
             iNVENTORY.cinnamon_count+=1;
             Debug.Log("Cinnamon bought!");
         }

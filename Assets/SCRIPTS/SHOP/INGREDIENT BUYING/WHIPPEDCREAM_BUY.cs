@@ -7,9 +7,9 @@ public class WHIPPEDCREAM_BUY : MonoBehaviour
     
     public void BuyWhippedCream()
     {
-        if (coinCounter.totalCoins >= 2)
+        if (coinCounter.totalCoins >= 4)
         {
-            coinCounter.ChangeCoins(-2);
+            coinCounter.ChangeCoins(-4);
             iNVENTORY.whippedcream_count+=1;
             Debug.Log("Whipped cream bought!");
         }

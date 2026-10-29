@@ -7,9 +7,9 @@ public class LADY_FINGERS_BUY : MonoBehaviour
     
     public void BuyLadyFingers()
     {
-        if (coinCounter.totalCoins >= 3)
+        if (coinCounter.totalCoins >= 8)
         {
-            coinCounter.ChangeCoins(-3);
+            coinCounter.ChangeCoins(-8);
             iNVENTORY.ladyfingers_count+=1;
             Debug.Log("Lady fingers bought!");
         }

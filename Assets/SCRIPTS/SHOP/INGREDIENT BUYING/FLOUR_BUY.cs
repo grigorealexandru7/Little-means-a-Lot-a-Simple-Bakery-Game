@@ -7,9 +7,9 @@ public class FLOUR_BUY : MonoBehaviour
     
     public void BuyFlour()
     {
-        if (coinCounter.totalCoins >= 4)
+        if (coinCounter.totalCoins >= 0)
         {
-            coinCounter.ChangeCoins(-4);
+            coinCounter.ChangeCoins(-0);
             iNVENTORY.flour_count+=1;
             Debug.Log("Flour bought!");
         }

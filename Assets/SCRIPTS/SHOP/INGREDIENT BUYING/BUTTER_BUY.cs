@@ -7,9 +7,9 @@ public class BUTTER_BUY : MonoBehaviour
 
     public void BuyButter()
     {
-        if (coinCounter.totalCoins >= 3)
+        if (coinCounter.totalCoins >= 2)
         {
-            coinCounter.ChangeCoins(-3);
+            coinCounter.ChangeCoins(-2);
             iNVENTORY.butter_count+=1;
             Debug.Log("Butter bought!");
         }

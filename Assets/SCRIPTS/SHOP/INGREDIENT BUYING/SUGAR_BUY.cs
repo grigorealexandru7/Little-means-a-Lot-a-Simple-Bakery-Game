@@ -7,9 +7,9 @@ public class SUGAR_BUY : MonoBehaviour
 
     public void BuySugar()
     {
-        if (coinCounter.totalCoins >= 4)
+        if (coinCounter.totalCoins >= 3)
         { 
-            coinCounter.ChangeCoins(-4); 
+            coinCounter.ChangeCoins(-3); 
             iNVENTORY.sugar_count+=1;
             Debug.Log("Sugar bought!");
         }

@@ -7,9 +7,9 @@ public class CHOCOLATE_BUY : MonoBehaviour
     
     public void BuyChocolate()
     {
-        if (coinCounter.totalCoins >= 3)
+        if (coinCounter.totalCoins >= 5)
         {
-            coinCounter.ChangeCoins(-3);
+            coinCounter.ChangeCoins(-5);
             iNVENTORY.chocolate_count+=1;
             Debug.Log("Chocolate bought!");
         }

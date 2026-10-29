@@ -7,9 +7,9 @@ public class COCOA_BUY : MonoBehaviour
     
     public void BuyCocoa()
     {
-        if (coinCounter.totalCoins >= 1)
+        if (coinCounter.totalCoins >= 5)
         {
-            coinCounter.ChangeCoins(-1);
+            coinCounter.ChangeCoins(-5);
             iNVENTORY.cocoa_count+=1;
             Debug.Log("Cocoa bought!");
         }

@@ -7,9 +7,9 @@ public class CORN_STARCH_BUY : MonoBehaviour
     
     public void BuyCornStarch()
     {
-        if (coinCounter.totalCoins >= 1)
+        if (coinCounter.totalCoins >= 6)
         {
-            coinCounter.ChangeCoins(-1);
+            coinCounter.ChangeCoins(-6);
             iNVENTORY.cornstarch_count+=1;
             Debug.Log("Corn starch bought!");
         }

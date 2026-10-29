@@ -7,9 +7,9 @@ public class FRUITS_BUY : MonoBehaviour
     
     public void BuyFruits()
     {
-        if (coinCounter.totalCoins >= 6)
+        if (coinCounter.totalCoins >= 10)
         {
-            coinCounter.ChangeCoins(-6);
+            coinCounter.ChangeCoins(-10);
             iNVENTORY.fruits_count+=1;
             Debug.Log("Fruits bought!");
         }

@@ -7,9 +7,9 @@ public class VANILLA_EXTRACT_BUY : MonoBehaviour
     
     public void BuyVanillaExtract()
     {
-        if (coinCounter.totalCoins >= 1)
+        if (coinCounter.totalCoins >= 4)
         {
-            coinCounter.ChangeCoins(-1);
+            coinCounter.ChangeCoins(-4);
             iNVENTORY.vanillaextract_count+=1;
             Debug.Log("Vanilla extract bought!");
         }

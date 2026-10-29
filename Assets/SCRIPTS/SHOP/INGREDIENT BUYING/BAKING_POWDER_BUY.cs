@@ -7,9 +7,9 @@ public class BAKING_POWDER_BUY : MonoBehaviour
 
     public void BuyBakingSoda()
     {
-        if (coinCounter.totalCoins >= 3)
+        if (coinCounter.totalCoins >= 2)
         {
-            coinCounter.ChangeCoins(-3);
+            coinCounter.ChangeCoins(-2);
             iNVENTORY.bakingsoda_count+=1;
             Debug.Log("Baking Powder bought!");
         }

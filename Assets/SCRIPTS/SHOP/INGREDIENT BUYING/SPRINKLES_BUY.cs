@@ -7,9 +7,9 @@ public class SPRINKLES_BUY : MonoBehaviour
     
     public void BuySprinkles()
     {
-        if (coinCounter.totalCoins >= 1)
+        if (coinCounter.totalCoins >= 3)
         {
-            coinCounter.ChangeCoins(-1);
+            coinCounter.ChangeCoins(-3);
             iNVENTORY.sprinkles_count+=1;
             Debug.Log("Sprinkles bought!");
         }

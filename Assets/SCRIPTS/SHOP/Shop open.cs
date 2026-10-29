@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Shopopen : MonoBehaviour
@@ -11,7 +12,7 @@ public class Shopopen : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         cameraController.Sensitivity = 0f;
-
+        
     }
     
     void Update()
