@@ -4,10 +4,12 @@ public class CameraController : MonoBehaviour
 {
     public float Sensitivity =250f;
     private float xRotation =0f;
+    public GameObject ShopUI; 
     void Start()
     {
-        //Cursor.lockState = CursorLockMode.Locked;
-        //Cursor.visible = false;
+        ShopUI.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     // Update is called once per frame

@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class Quitshopbutton : MonoBehaviour
 {
-    
+    private CameraController cameraController;
     public GameObject ShopUI; 
     public void PRESS()
     {
+        ShopUI.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        ShopUI.SetActive(false);
+        cameraController.Sensitivity = 250f;
     }
     
     void Update()
