@@ -6,6 +6,8 @@ public class Cookiemix : MonoBehaviour
     public Maderecipes maderecipes;
     public INVENTORY inventory;
 
+    public AudioSource audioSource;
+    public AudioClip Knead;
     private void OnMouseDown()
     {
         if (inventory.flour_count >= 1 && inventory.butter_count >= 1 && inventory.sugar_count >= 1 &&
@@ -17,6 +19,8 @@ public class Cookiemix : MonoBehaviour
             inventory.eggs_count -= 1;
             inventory.cc_count -= 1;
             inventory.bakingsoda_count -= 1;
+
+            audioSource.PlayOneShot(Knead);
             
             maderecipes.Cookie++;
             Debug.Log("Great job! You've just made a cookie!");

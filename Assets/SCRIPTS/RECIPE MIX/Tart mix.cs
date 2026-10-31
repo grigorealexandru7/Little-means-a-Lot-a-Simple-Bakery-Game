@@ -5,6 +5,9 @@ public class Tartmix : MonoBehaviour
     public Maderecipes maderecipes;
     public INVENTORY inventory;
 
+    public AudioSource audioSource;
+    public AudioClip Knead;
+    
     private void OnMouseDown()
     {
         if (inventory.flour_count >= 1 && inventory.butter_count >= 2 && inventory.sugar_count >= 2 &&
@@ -18,6 +21,8 @@ public class Tartmix : MonoBehaviour
             inventory.milk_count -= 1;
             inventory.cornstarch_count -= 1;
             inventory.fruits_count -= 1;
+            
+            audioSource.PlayOneShot(Knead);
 
             maderecipes.Tart++;
             Debug.Log("Great job! You've just made a tart!");

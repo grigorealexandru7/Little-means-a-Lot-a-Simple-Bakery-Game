@@ -5,6 +5,8 @@ public class Cupcakemix : MonoBehaviour
     public Maderecipes maderecipes;
     public INVENTORY inventory;
 
+    public AudioSource audioSource;
+    public AudioClip Knead;
     private void OnMouseDown()
     {
         if (inventory.flour_count >= 1 && inventory.sugar_count >= 1 && inventory.butter_count >= 1 &&
@@ -22,6 +24,8 @@ public class Cupcakemix : MonoBehaviour
             inventory.whippedcream_count -= 1;
             inventory.vanillaextract_count -= 1;
             inventory.sprinkles_count -= 3;
+
+            audioSource.PlayOneShot(Knead);
             
             maderecipes.Cupcake++;
             Debug.Log("Great job! You've just made a cupcake!");

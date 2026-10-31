@@ -6,6 +6,8 @@ public class Donutmix : MonoBehaviour
     public Maderecipes maderecipes;
     public INVENTORY inventory;
 
+    public AudioSource audioSource;
+    public AudioClip Knead;
     private void OnMouseDown()
     {
         if (inventory.flour_count >= 1 && inventory.milk_count >= 2 && inventory.yeast_count >= 1 &&
@@ -21,6 +23,8 @@ public class Donutmix : MonoBehaviour
             inventory.oil_count -= 1;
             inventory.powdersugar_count -= 1;
             inventory.sprinkles_count -= 1;
+
+            audioSource.PlayOneShot(Knead);
 
             maderecipes.Donut++;
             Debug.Log("Great job! You've just made a donut!");

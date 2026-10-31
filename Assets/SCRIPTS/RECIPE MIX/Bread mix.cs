@@ -4,13 +4,16 @@ public class Breadmix : MonoBehaviour
 {
     public Maderecipes maderecipes;
     public INVENTORY inventory;
+
+    public AudioSource audioSource;
+    public AudioClip Knead;
     private void OnMouseDown()
     {
         if (inventory.flour_count >= 1 && inventory.yeast_count >= 1)
         {
             inventory.flour_count -= 1;
             inventory.yeast_count -= 1;
-            
+            audioSource.PlayOneShot(Knead);
             maderecipes.Bread++;
             Debug.Log("Great job! You've just made a bread!");
         }

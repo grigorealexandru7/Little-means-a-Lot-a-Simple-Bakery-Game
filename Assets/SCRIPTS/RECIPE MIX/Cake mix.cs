@@ -5,6 +5,8 @@ public class Cakemix : MonoBehaviour
     public Maderecipes maderecipes;
     public INVENTORY inventory;
 
+    public AudioSource AudioSource;
+    public AudioClip knead;
     private void OnMouseDown()
     {
         if (inventory.ladyfingers_count >= 5 && inventory.fruitjuice_count >= 1 && inventory.eggs_count >= 3 &&
@@ -19,6 +21,8 @@ public class Cakemix : MonoBehaviour
             inventory.milk_count -= 1;
             inventory.fruits_count -= 2;
 
+            AudioSource.PlayOneShot(knead);
+            
             maderecipes.Cake++;
             Debug.Log("Great job! You've just made a cake!");
         }
