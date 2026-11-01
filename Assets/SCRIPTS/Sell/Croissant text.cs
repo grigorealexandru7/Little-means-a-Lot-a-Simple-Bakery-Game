@@ -12,10 +12,9 @@ public class Croissanttext : MonoBehaviour
         if (croissant.text != "0")
         {
             maderecipes.Croissant--;
-            croissant.text =maderecipes.Bread.ToString();
+            croissant.text = maderecipes.Bread.ToString();
             coinCounter.ChangeCoins(12);
             audioSource.PlayOneShot(Coins);
         }
-            
     }
 }
