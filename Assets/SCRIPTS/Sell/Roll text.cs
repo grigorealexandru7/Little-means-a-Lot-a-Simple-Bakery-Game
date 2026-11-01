@@ -7,7 +7,7 @@ public class Rolltext : MonoBehaviour
     public CoinCounter coinCounter;
     public AudioSource audioSource;
     public AudioClip Coins;
-    private void OnMOuseDown()
+    private void OnMouseDown()
     {
         if (roll.text != "0")
         {
